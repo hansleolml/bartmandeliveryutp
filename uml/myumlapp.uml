@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="111.05125000000001" y="901.0">pe.edu.utp.barmandelivery.controller.BarmanController</node>
+    <node x="262.0" y="0.0">pe.edu.utp.barmandelivery.models.Barman</node>
+    <node x="837.05125" y="0.0">pe.edu.utp.barmandelivery.models.Cliente</node>
+    <node x="594.05125" y="0.0">pe.edu.utp.barmandelivery.models.Usuario</node>
+    <node x="0.0" y="55.5">pe.edu.utp.barmandelivery.models.BaseEntity</node>
+    <node x="112.86374999999998" y="579.0">pe.edu.utp.barmandelivery.models.BdService</node>
+    <node x="70.36374999999998" y="257.0">pe.edu.utp.barmandelivery.models.BarmansEntity</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="pe.edu.utp.barmandelivery.models.BarmansEntity" target="pe.edu.utp.barmandelivery.models.Barman">
+      <point x="96.75" y="-136.0" />
+      <point x="296.11375" y="232.0" />
+      <point x="321.7" y="232.0" />
+      <point x="-39.80000000000001" y="103.5" />
+    </edge>
+    <edge source="pe.edu.utp.barmandelivery.models.BdService" target="pe.edu.utp.barmandelivery.models.Barman">
+      <point x="97.125" y="-136.0" />
+      <point x="339.48875" y="554.0" />
+      <point x="373.7" y="554.0" />
+      <point x="373.7" y="232.0" />
+      <point x="361.5" y="232.0" />
+      <point x="0.0" y="103.5" />
+    </edge>
+    <edge source="pe.edu.utp.barmandelivery.controller.BarmanController" target="pe.edu.utp.barmandelivery.models.Barman">
+      <point x="164.25" y="-70.0" />
+      <point x="494.30125" y="876.0" />
+      <point x="410.11375" y="876.0" />
+      <point x="410.11375" y="232.0" />
+      <point x="441.1" y="232.0" />
+      <point x="79.60000000000002" y="103.5" />
+    </edge>
+    <edge source="pe.edu.utp.barmandelivery.controller.BarmanController" target="pe.edu.utp.barmandelivery.models.BdService">
+      <point x="-54.75" y="-70.0" />
+      <point x="275.30125" y="876.0" />
+      <point x="307.11375" y="876.0" />
+      <point x="64.75" y="136.0" />
+    </edge>
+    <edge source="pe.edu.utp.barmandelivery.models.BdService" target="pe.edu.utp.barmandelivery.models.BarmansEntity">
+      <point x="-32.375" y="-136.0" />
+      <point x="209.98874999999998" y="554.0" />
+      <point x="199.36374999999998" y="554.0" />
+      <point x="0.0" y="136.0" />
+    </edge>
+    <edge source="pe.edu.utp.barmandelivery.models.BarmansEntity" target="pe.edu.utp.barmandelivery.models.BaseEntity">
+      <point x="-32.25" y="-136.0" />
+      <point x="167.11374999999998" y="232.0" />
+      <point x="181.5" y="232.0" />
+      <point x="60.5" y="48.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5240339302544769" x="516.5" y="520.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
