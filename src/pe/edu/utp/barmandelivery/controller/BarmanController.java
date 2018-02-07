@@ -47,8 +47,8 @@ public class BarmanController extends HttpServlet {
 
         // action = index, method = Get
         if (action.equalsIgnoreCase("index")){
-            List<Barman> regions = service.findAllBarmans();
-            request.setAttribute("regions",regions);
+            List<Barman> barmans = service.findAllBarmans();
+            request.setAttribute("barmans",barmans);
             url = "listBarmans.jsp";
         }
 
@@ -66,7 +66,7 @@ public class BarmanController extends HttpServlet {
         if (action.equalsIgnoreCase("create")){
             String name = request.getParameter("name");
             Barman region = service.createBarman(name);
-            request.setAttribute("regions",service.findAllBarmans());
+            request.setAttribute("barmans",service.findAllBarmans());
             url="listBarmans.jsp";
         }
         // action = edit, method = Get
