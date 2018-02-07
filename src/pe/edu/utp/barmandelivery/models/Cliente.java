@@ -4,12 +4,12 @@ public class Cliente {
     private int id;
     private String name;
 
-    public Cliente(int id, String name) {
+    public Cliente(int id, String name) { //clase cliente
         this.id=id;
         this.name=name;
     }
 
-    public Cliente() {
+    public Cliente() {//esto es para cliente
     }
 
     public int getId() {
