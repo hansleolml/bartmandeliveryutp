@@ -91,6 +91,9 @@ public class BarmanController extends HttpServlet {
             request.setAttribute("region",service.findAllBarmans());
             url="listBarmans.jsp";
         }
+        if (action.equalsIgnoreCase("register")){
+            url="register.jsp";
+        }
         request.getRequestDispatcher(url).forward(request,response);
 
     }
