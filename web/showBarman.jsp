@@ -11,8 +11,8 @@
     <title>Ver barmans</title>
 </head>
 <body>
-    <p>Barman ID:<c:out value="${barman.id}"></c:out></p>
-    <p>Barman Name:<c:out value="${barman.name}"></c:out></p>
+    <p>Barman ID:1<c:out value="${barman.id}"></c:out></p>
+    <p>Barman Name:Julio Guzman<c:out value="${barman.name}"></c:out></p>
     <p><a href="barmans">Lista de Barmans</a></p>
 </body>
 </html>

@@ -17,7 +17,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(name = "BarmanController", urlPatterns = "/barmans")
+@WebServlet(name = "BarmanController", urlPatterns = "/barmans") //aca se conecta con la a href = "barmans"
 public class BarmanController extends HttpServlet {
     private Connection connection;
 

@@ -15,5 +15,10 @@
   <body>
     <h1>Barman Delivery</h1>
     <p><a href="barmans">Ver lista de Barmans</a></p>
+    <input type="text" placeholder="Ingrese correo"/><br>
+    <input type="password" placeholder="Ingrese contraseña"/><br>
+    <p><a href="barmans">Iniciar Sesión</a></p>
+    <p>¿En BarmanDelivery por primera vez?,<a href="barmans">Regístrate</a></p>
+
   </body>
 </html>

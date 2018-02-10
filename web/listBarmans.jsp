@@ -50,27 +50,8 @@
             <td>1</td>
             <td>Julio Guzman</td>
             <td>Pisco - Tequila - Vodka - Whiski</td>
-            <td><a href="">Ver</a></td>
+            <td><a href="barmans?action=show&id=1">Ver</a></td>
         </tr>
-        <tr>
-            <td>1</td>
-            <td>Julio Guzman</td>
-            <td>Pisco - Tequila - Vodka - Whiski</td>
-            <td><a href="">Ver</a></td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Julio Guzman</td>
-            <td>Pisco - Tequila - Vodka - Whiski</td>
-            <td><a href="">Ver</a></td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Julio Guzman</td>
-            <td>Pisco - Tequila - Vodka - Whiski</td>
-            <td><a href="">Ver</a></td>
-        </tr>
-
 
         <c:forEach var="barman" items="${barmans}">
             <tr>
