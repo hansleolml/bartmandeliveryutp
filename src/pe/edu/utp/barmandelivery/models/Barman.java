@@ -5,6 +5,7 @@ public class Barman {
 
     private String name;
 //BARMAN CLASE
+    //barman 
     public Barman(int id, String name) {
         this.id=id;
         this.name=name;
