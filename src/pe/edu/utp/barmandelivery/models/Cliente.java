@@ -4,7 +4,7 @@ public class Cliente {
     private int id;
     private String name;
 
-    public Cliente(int id, String name) { //clase clientessssssssssssss
+    public Cliente(int id, String name) { //uno
         this.id=id;
         this.name=name;
     }
