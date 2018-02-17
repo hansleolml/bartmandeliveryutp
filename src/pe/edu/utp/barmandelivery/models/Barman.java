@@ -2,7 +2,7 @@ package pe.edu.utp.barmandelivery.models;
 
 public class Barman {
     private int id;
-// BARMAN DELIVERY 
+// BARMAN DELIVERY HOLA NO SOY JAVIER
     private String name;
 //BARMAN CLASE
     //barman
