@@ -9,6 +9,7 @@ public class Barman {  // holaaaaaaa
     //HOLA MUNDO POR CUARTA VEZ AHORA SI SOY JAVIER
     //OJALA AHORA SI SEA JAVIER Y NO NICOLAS
     //fsdfsdfsdfsd
+    //nuevo
     private String name;
 //BARMAN CLASE
     //barman
