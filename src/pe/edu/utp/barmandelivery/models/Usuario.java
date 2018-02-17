@@ -1,6 +1,6 @@
 package pe.edu.utp.barmandelivery.models;
 
-public class Usuario {
+public class Usuario {//asdasdasd
     private int id;
     private String name;
 

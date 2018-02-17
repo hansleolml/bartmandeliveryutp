@@ -41,15 +41,17 @@
     <h1>Lista de Barmans</h1>
     <table class="table">
         <tr>
-            <th>ID</th>
+            <th>Imagen</th>
             <th>Nombre</th>
             <th>Especialidades</th>
+            <th>Puntuación</th>
             <th>Acción</th>
         </tr>
         <tr>
-            <td>1</td>
+            <td>Foto</td>
             <td>Julio Guzman</td>
             <td>Pisco - Tequila - Vodka - Whiski</td>
+            <td>4 estrellas</td>
             <td><a href="barmans?action=show&id=1">Ver</a></td>
         </tr>
 
