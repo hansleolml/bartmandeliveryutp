@@ -1,10 +1,10 @@
 package pe.edu.utp.barmandelivery.models;
 
-public class Usuario {//asdasdasd
+public class Usuario {
     private int id;
     private String name;
 
-    public Usuario(int id, String name) {//asdasdasd
+    public Usuario(int id, String name) {
         this.id=id;
         this.name=name;
     }

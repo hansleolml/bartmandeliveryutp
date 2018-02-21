@@ -1,15 +1,14 @@
 package pe.edu.utp.barmandelivery.models;
-//push
 public class Cliente {
     private int id;
     private String name;
 
-    public Cliente(int id, String name) { //uno
+    public Cliente(int id, String name) {
         this.id=id;
         this.name=name;
     }
 
-    public Cliente() {//esto es para cliente
+    public Cliente() {
     }
 
     public int getId() {

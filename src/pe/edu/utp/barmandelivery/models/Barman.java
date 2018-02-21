@@ -1,19 +1,8 @@
 package pe.edu.utp.barmandelivery.models;
 
-public class Barman {  // holaaaaaaa
+public class Barman {
     private int id;
-// BARMAN DELIVERY HOLA NO SOY JAVIER
-    //HOLA MUNDO SOY JAVIER EL UNICO
-    //HOLA MUNDO VERSION II SOY JAVIER
-    // HOLA MUNDO VERSION TRES AHORA SI SOY JAVIER EL UNICO
-    //HOLA MUNDO POR CUARTA VEZ AHORA SI SOY JAVIER
-    //OJALA AHORA SI SEA JAVIER Y NO NICOLAS
-    //fsdfsdfsdfsd
-    //nuevo
-    //yuuuuuuuuu
     private String name;
-//BARMAN CLASE
-    //barman
     public Barman(int id, String name) {
         this.id=id;
         this.name=name;
