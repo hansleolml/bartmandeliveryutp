@@ -29,6 +29,7 @@ public class BdService {
 
 
 
+
     public List<Barman> findAllBarman(){
         return getBarmansEntity() !=null ?
                 getBarmansEntity().findAll():null;
@@ -57,5 +58,8 @@ public class BdService {
         return getBarmansEntity() != null ?
                 getBarmansEntity().update(region) : false;
     }
+
+
+
 
 }

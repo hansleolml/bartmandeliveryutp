@@ -3,6 +3,8 @@ package pe.edu.utp.barmandelivery.models;
 public class Barman {
     private int id;
     private String name;
+
+
     public Barman(int id, String name) {
         this.id=id;
         this.name=name;
