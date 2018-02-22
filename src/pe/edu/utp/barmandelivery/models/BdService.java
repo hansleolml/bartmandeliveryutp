@@ -6,7 +6,7 @@ import java.util.List;
 public class BdService {
     private Connection connection;
     private BarmansEntity barmansEntity;//debe retornar una instancia de region entity, pero no es necesario visualizarlo
-
+    private CustomerEntity customerEntity;
 
     public Connection getConnection() {
         return connection;
@@ -25,6 +25,18 @@ public class BdService {
         }
         return barmansEntity;
     }
+    public CustomerEntity getCustomerEntity() {
+        if (getConnection()!=null){
+            if (customerEntity==null){
+                customerEntity=new CustomerEntity();
+                customerEntity.setConnection(getConnection());
+            }
+        }
+        return customerEntity;
+    }
+
+
+
 
 
     public List<Barman> findAllBarman(){
@@ -51,9 +63,35 @@ public class BdService {
         return getBarmansEntity()!= null ?
                 getBarmansEntity().delete(id):false;
     }
-    public  boolean updateBarman(Barman region){
+    public  boolean updateBarman(Barman barman){
         return getBarmansEntity() != null ?
-                getBarmansEntity().update(region) : false;
+                getBarmansEntity().update(barman) : false;
+    }
+
+
+    public List<Customer> findAllCustomer(){
+        return getCustomerEntity() !=null ?
+                getCustomerEntity().findAll():null;
+    }
+
+    public Customer findCustomerById(int id){
+        return getCustomerEntity()!=null ?
+                getCustomerEntity().findById(id):null;
+    }
+
+    public Customer findCustomerByName(String name) {
+        return getCustomerEntity() != null ?
+                getCustomerEntity().findByName(name) : null;
+    }
+
+
+    public boolean deleteCustomer(int id){
+        return getCustomerEntity()!= null ?
+                getCustomerEntity().delete(id):false;
+    }
+    public  boolean updateCustomer(Customer customer){
+        return getCustomerEntity() != null ?
+                getCustomerEntity().update(customer) : false;
     }
 
 
