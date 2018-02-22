@@ -6,6 +6,7 @@ public class Notification {
     private String customer;
     public Notification() {
     }
+
     public Notification(String id, String name, String customer) {
         this.id = id;
         this.name = name;

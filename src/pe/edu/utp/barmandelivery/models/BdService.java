@@ -27,9 +27,6 @@ public class BdService {
     }
 
 
-
-
-
     public List<Barman> findAllBarman(){
         return getBarmansEntity() !=null ?
                 getBarmansEntity().findAll():null;
