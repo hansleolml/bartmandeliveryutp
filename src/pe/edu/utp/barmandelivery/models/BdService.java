@@ -5,7 +5,7 @@ import java.util.List;
 
 public class BdService {
     private Connection connection;
-    private BarmansEntity regionsEntity;//debe retornar una instancia de region entity, pero no es necesario visualizarlo
+    private BarmansEntity barmansEntity;//debe retornar una instancia de region entity, pero no es necesario visualizarlo
 
 
     public Connection getConnection() {
@@ -18,15 +18,18 @@ public class BdService {
 
     public BarmansEntity getBarmansEntity() {
         if (getConnection()!=null){
-            if (regionsEntity==null){
-                regionsEntity=new BarmansEntity();
-                regionsEntity.setConnection(getConnection());
+            if (barmansEntity==null){
+                barmansEntity=new BarmansEntity();
+                barmansEntity.setConnection(getConnection());
             }
         }
-        return regionsEntity;
+        return barmansEntity;
     }
 
-    public List<Barman> findAllBarmans(){
+
+
+
+    public List<Barman> findAllBarman(){
         return getBarmansEntity() !=null ?
                 getBarmansEntity().findAll():null;
     }
@@ -54,4 +57,5 @@ public class BdService {
         return getBarmansEntity() != null ?
                 getBarmansEntity().update(region) : false;
     }
+
 }

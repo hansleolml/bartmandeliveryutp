@@ -1,21 +1,21 @@
 package pe.edu.utp.barmandelivery.models;
-public class Cliente {
+public class Customer {
     private int id;
     private String name;
 
-    public Cliente(int id, String name) {
+    public Customer(int id, String name) {
         this.id=id;
         this.name=name;
     }
 
-    public Cliente() {
+    public Customer() {
     }
 
     public int getId() {
         return id;
     }
 
-    public Cliente setId(int id) {
+    public Customer setId(int id) {
         this.id = id;
         return this;
     }
@@ -24,7 +24,7 @@ public class Cliente {
         return name;
     }
 
-    public Cliente setName(String name) {
+    public Customer setName(String name) {
         this.name = name;
         return this;
     }
