@@ -103,4 +103,5 @@ public class BarmansEntity extends BaseEntity{
         return updatebyCriteria("UPDATE barmans SET barman_name ='"+barman.getName()+"'WHERE barman_id="+
                 String.valueOf(barman.getId()))>0;
     }
+
 }
