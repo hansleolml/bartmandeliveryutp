@@ -11,12 +11,12 @@ import java.util.List;
 
 @Named
 @SessionScoped
-public class BarmanBean implements Serializable{
+public class BarmansBean implements Serializable{
 
     private BdService service;
     private Barman barman;
 
-    public BarmanBean(){
+    public BarmansBean(){
         service= new BdService();
     }
 
