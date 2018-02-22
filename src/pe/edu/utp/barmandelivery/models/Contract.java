@@ -1,6 +1,6 @@
 package pe.edu.utp.barmandelivery.models;
 
-public class Contracts {
+public class Contract {
     private int id;
     private String name;
     private String place;
@@ -8,7 +8,7 @@ public class Contracts {
     private int time;
     private double confirmation;
 
-    public Contracts(int id, String name, String place, int order, int time, double confirmation) { //uno
+    public Contract(int id, String name, String place, int order, int time, double confirmation) { //uno
         this.id=id;
         this.name=name;
         this.place=place;
@@ -18,14 +18,14 @@ public class Contracts {
 
     }
 
-    public Contracts() {//esto es para cliente
+    public Contract() {//esto es para cliente
     }
 
     public int getId() {
         return id;
     }
 
-    public Contracts setId(int id) {
+    public Contract setId(int id) {
         this.id = id;
         return this;
     }
@@ -34,7 +34,7 @@ public class Contracts {
         return name;
     }
 
-    public Contracts setName(String name) {
+    public Contract setName(String name) {
         this.name = name;
         return this;
     }
