@@ -11,6 +11,10 @@ public class Notification {
         this.name = name;
         this.customer = customer;
     }
+
+    public Notification(int maxId, String name) {
+    }
+
     public String getId() {
         return id;
     }
@@ -34,6 +38,10 @@ public class Notification {
         return this;
     }
 
+    public Notification setId(int notifications_id) {
+    this.id = id;
+    return this;
+    }
 }
 
 
