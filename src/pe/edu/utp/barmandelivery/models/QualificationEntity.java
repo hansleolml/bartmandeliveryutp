@@ -97,11 +97,11 @@ public class QualificationEntity extends BaseEntity{
     public boolean delete(String barman){
         return updatebyCriteria("DELETE FROM notification WHERE qualification_barman ='"+barman+"'")>0;
     }
-
+/*
     public boolean update(Barman qualification){
         return updatebyCriteria("UPDATE qualification SET qualification_barman ='"+qualification.getName()+"'WHERE qualification_id="+
                 String.valueOf(qualification.getId()))>0;
-    }
+    } */
 
 }
 

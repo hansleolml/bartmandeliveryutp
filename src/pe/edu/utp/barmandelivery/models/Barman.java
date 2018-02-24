@@ -2,12 +2,12 @@ package pe.edu.utp.barmandelivery.models;
 
 public class Barman {
     private int id;
-    private String name;
+    private int user_id;
 
 
-    public Barman(int id, String name) {
+    public Barman(int id, int user_id) {
         this.id=id;
-        this.name=name;
+        this.setUser_id(user_id);
     }
 
     public Barman() {
@@ -22,12 +22,11 @@ public class Barman {
         return this;
     }
 
-    public String getName() {
-        return name;
+    public int getUser_id() {
+        return user_id;
     }
 
-    public Barman setName(String name) {
-        this.name = name;
-        return this;
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
     }
 }

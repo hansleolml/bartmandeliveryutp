@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BarmansEntity extends BaseEntity{
-    private static String DEFAULT_SQL="SELECT * FROM hr.barmans";
+    private static String DEFAULT_SQL="SELECT * FROM bar.barmans";
 
     private List<Barman> findByCriteria(String sql){
         List<Barman> barmans;
@@ -74,7 +74,7 @@ public class BarmansEntity extends BaseEntity{
         return 0;
     }
 
-
+/*
     public Barman create(String name) {
         if (findByName(name) == null) {
             if (getConnection() != null) {
@@ -88,7 +88,7 @@ public class BarmansEntity extends BaseEntity{
             }
         }
         return null;
-    }
+    }*/
     public boolean delete(int id){
         return updatebyCriteria("DELETE FROM barmans WHERE barman_id ="+String.valueOf(id)) > 0;
 
@@ -97,10 +97,10 @@ public class BarmansEntity extends BaseEntity{
     public boolean delete(String name){
         return updatebyCriteria("DELETE FROM barmans WHERE barman_name ='"+name+"'")>0;
     }
-
+/*
     public boolean update(Barman barman){
         return updatebyCriteria("UPDATE barmans SET barman_name ='"+barman.getName()+"'WHERE barman_id="+
                 String.valueOf(barman.getId()))>0;
-    }
+    }*/
 
 }

@@ -98,12 +98,12 @@ public class NotificationsEntity extends BaseEntity{
     public boolean delete(String name){
         return updatebyCriteria("DELETE FROM notification WHERE notification_name ='"+name+"'")>0;
     }
-
+/*
     public boolean update(Barman notification){
         return updatebyCriteria("UPDATE notification SET notification_name ='"+notification.getName()+"'WHERE notification_id="+
                 String.valueOf(notification.getId()))>0;
     }
-
+*/
 }
 
 

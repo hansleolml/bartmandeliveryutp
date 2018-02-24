@@ -53,20 +53,21 @@ public class BdService {
         return getBarmansEntity() != null ?
                 getBarmansEntity().findByName(name) : null;
     }
-
+/*
     public Barman createBarman(String name){
         return getBarmansEntity()!=null?
                 getBarmansEntity().create(name):null;
-    }
+    }*/
 
     public boolean deleteBarman(int id){
         return getBarmansEntity()!= null ?
                 getBarmansEntity().delete(id):false;
     }
+    /*
     public  boolean updateBarman(Barman barman){
         return getBarmansEntity() != null ?
                 getBarmansEntity().update(barman) : false;
-    }
+    }*/
 
 
     public List<Customer> findAllCustomer(){
