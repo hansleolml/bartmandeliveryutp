@@ -17,9 +17,9 @@ public class BarmansEntity extends BaseEntity{
                         .createStatement()
                         .executeQuery(sql);
                 while (resultSet.next()) {
-                    Barman region = new Barman()
-                            .setId(resultSet.getInt("region_id"));
-                    barmans.add(region);
+                    Barman barman = new Barman()
+                            .setId(resultSet.getInt("id"));
+                    barmans.add(barman);
                 }
                 return barmans;
 

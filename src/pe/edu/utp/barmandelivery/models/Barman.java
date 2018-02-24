@@ -7,7 +7,7 @@ public class Barman {
 
     public Barman(int id, int user_id) {
         this.id=id;
-        this.setUser_id(user_id);
+        this.user_id = user_id;
     }
 
     public Barman() {
