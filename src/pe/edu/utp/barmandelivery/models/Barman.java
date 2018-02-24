@@ -16,7 +16,6 @@ public class Barman {
     public int getId() {
         return id;
     }
-
     public Barman setId(int id) {
         this.id = id;
         return this;
