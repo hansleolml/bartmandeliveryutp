@@ -6,6 +6,12 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
-    <h:outputLabel value="Hello, world"/>
+    <h:outputLabel value="Edit Barman"/>
+    <h:form>
+        <h:outputLabel value="Barman Name" for="name"/>
+        <h:inputText id="name" value="#{barmansBean.name}"/>
+        <h:commandButton value="Update" action="#{barmansBean.updateBarman}"/>
+    </h:form>
+
 </f:view>
 </html>

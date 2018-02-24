@@ -5,16 +5,30 @@
               xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
               version="2.0">
     <navigation-rule>
-        <from-view-id></from-view-id>
+        <from-view-id>/listBarmans.xhtml</from-view-id>
         <navigation-case>
-            <from-action>#{regionsBean.newRegion}</from-action>
+            <from-action>#{barmansBean.newBarman}</from-action>
             <from-outcome>success</from-outcome>
-            <to-view-id>1</to-view-id>
+            <to-view-id>/newBarman.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
-            <from-action>#{regionsBean.editRegion(region)}</from-action>
+            <from-action>#{barmansBean.editBarman(barman)}</from-action>
             <from-outcome>success</from-outcome>
-            <to-view-id>1</to-view-id>
+            <to-view-id>/editBarman.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/newBarman.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>success</from-outcome>
+            <to-view-id>/listBarmans.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/editBarman.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>success</from-outcome>
+            <to-view-id>/listBarmans.xhtml</to-view-id>
         </navigation-case>
     </navigation-rule>
 </faces-config>
