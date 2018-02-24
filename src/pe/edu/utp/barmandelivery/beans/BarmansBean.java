@@ -1,7 +1,7 @@
 package pe.edu.utp.barmandelivery.beans;
 
 import pe.edu.utp.barmandelivery.models.Barman;
-import pe.edu.utp.barmandelivery.models.BdService;
+import pe.edu.utp.barmandelivery.models.BarService;
 
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
@@ -13,16 +13,16 @@ import java.util.List;
 @SessionScoped
 public class BarmansBean implements Serializable{
 
-    private BdService service;
+    private BarService service;
     private Barman barman;
 
     public BarmansBean(){
-        service= new BdService();
+        service= new BarService();
     }
 
     public List<Barman> getBarmans(){
 
-        return service.findAllBarman();
+        return service.findAllBarmans();
     }
     public Barman getBarman(){
         return barman;
