@@ -17,8 +17,7 @@ public class BarmansEntity extends BaseEntity{
 
                 while(resultSet.next()){
                     Barman barman= new Barman()
-                            .setId(resultSet.getInt( "barman_id" ))
-                            .setName(resultSet.getString( "barman_name" ));
+                            .setId(resultSet.getInt( "barman_id" ));
                     barmans.add(barman);
                 }
                 return barmans;
