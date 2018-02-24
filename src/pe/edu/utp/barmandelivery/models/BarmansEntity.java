@@ -8,26 +8,28 @@ import java.util.List;
 public class BarmansEntity extends BaseEntity{
     private static String DEFAULT_SQL="SELECT * FROM bar.barmans";
 
-    private List<Barman> findByCriteria(String sql){
+    private List<Barman> findByCriteria(String sql) {
         List<Barman> barmans;
-        if(getConnection()!=null) {
+        if(getConnection() != null) {
             barmans = new ArrayList<>();
             try {
-                ResultSet resultSet= getConnection().createStatement().executeQuery(sql);
-
-                while(resultSet.next()){
-                    Barman barman= new Barman()
-                            .setId(resultSet.getInt( "barman_id" ));
-                    barmans.add(barman);
+                ResultSet resultSet = getConnection()
+                        .createStatement()
+                        .executeQuery(sql);
+                while (resultSet.next()) {
+                    Barman region = new Barman()
+                            .setId(resultSet.getInt("region_id"));
+                    barmans.add(region);
                 }
                 return barmans;
+
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-
         }
         return null;
     }
+    
     public List<Barman> findAll(){
         return findByCriteria(DEFAULT_SQL);
     }
