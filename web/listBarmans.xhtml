@@ -12,18 +12,23 @@
         <h:column>
             <f:facet name="header">FOTO</f:facet>
             #{barman.id}
-            <h:form>
-                <h:commandButton value="Edit" action="#{barmansBean.editBarman(barman)}"/>
-                <h:commandButton value="Delete" action="#{barmansBean.deleteBarman(barman)}"/>
-            </h:form>
+        </h:column>
+        <h:column>
+            <f:facet name="header">NOMBRE</f:facet>
+            #{barman.name}
+        </h:column>
+        <h:column>
+            <f:facet name="header">APELLIDOS</f:facet>
+            #{barman.sur_names}
         </h:column>
         <h:column>
             <f:facet name="header">CALIFICACIÓN</f:facet>
             #{barman.id}
         </h:column>
         <h:column>
-            <f:facet name="header">Nombre</f:facet>
-            #{barman.name}
+            <h:form>
+                <h:commandButton value="Contratar" action="#{barmansBean.contractBarman(barman)}"/>
+            </h:form>
         </h:column>
     </h:dataTable>
     <h:form>
