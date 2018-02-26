@@ -2,23 +2,17 @@ package pe.edu.utp.barmandelivery.models;
 
 public class Contract {
     private int id;
-    private String name;
-    private String place;
-    private int order;
-    private int time;
-    private double confirmation;
+    private int bartenderId;
+    private int clienteId;
 
-    public Contract(int id, String name, String place, int order, int time, double confirmation) { //uno
-        this.id=id;
-        this.name=name;
-        this.place=place;
-        this.order=order;
-        this.time=time;
-        this.confirmation=confirmation;
-
+    public Contract(int id, int bartenderId, int clienteId) {
+        this.id = id;
+        this.bartenderId = bartenderId;
+        this.clienteId = clienteId;
     }
 
-    public Contract() {//esto es para cliente
+    public Contract(){
+
     }
 
     public int getId() {
@@ -30,12 +24,21 @@ public class Contract {
         return this;
     }
 
-    public String getName() {
-        return name;
+    public int getBartenderId() {
+        return bartenderId;
     }
 
-    public Contract setName(String name) {
-        this.name = name;
+    public Contract setBartenderId(int bartenderId) {
+        this.bartenderId = bartenderId;
+        return this;
+    }
+
+    public int getClienteId() {
+        return clienteId;
+    }
+
+    public Contract setClienteId(int clienteId) {
+        this.clienteId = clienteId;
         return this;
     }
 }

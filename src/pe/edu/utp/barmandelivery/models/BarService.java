@@ -10,6 +10,7 @@ import java.util.List;
 public class BarService {
     private Connection connection;
     private BarmansEntity barmansEntity;
+    private ContractsEntity contractsEntity;
 
     private Connection getConnection() {
         if(connection == null) {
@@ -37,11 +38,24 @@ public class BarService {
         }
         return barmansEntity;
     }
+    protected ContractsEntity getContractsEntity() {
+        if(getConnection() != null) {
+            if(contractsEntity == null) {
+                contractsEntity = new ContractsEntity();
+                contractsEntity.setConnection(getConnection());
+            }
+        }
+        return contractsEntity;
+    }
 
 
     public List<Barman> findAllBarmans() {
         return getBarmansEntity() != null ?
                 getBarmansEntity().findAll() : null;
+    }
+    public List<Contract> findAllContracts() {
+        return getContractsEntity() != null ?
+                getContractsEntity().findAll() : null;
     }
     
     public Barman findBarmanById(int id) {

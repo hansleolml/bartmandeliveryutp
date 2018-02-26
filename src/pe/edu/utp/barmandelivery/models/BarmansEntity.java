@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BarmansEntity extends BaseEntity{
-    private static String DEFAULT_SQL="SELECT * FROM bar.users LEFT JOIN bar.barmans on bar.users.ID = bar.barmans.user_id";
+    private static String DEFAULT_SQL="SELECT * FROM bar.users LEFT JOIN bar.bartenders on bar.users.ID = bar.bartenders.users_id";
 
     private List<Barman> findByCriteria(String sql) {
         List<Barman> barmans;
@@ -18,8 +18,9 @@ public class BarmansEntity extends BaseEntity{
                         .executeQuery(sql);
                 while (resultSet.next()) {
                     Barman barman = new Barman()
-                            .setId(resultSet.getInt("barmans.id"))
-                            .setName(resultSet.getString("users.name"));
+                            .setId(resultSet.getInt("bartenders.id"))
+                            .setName(resultSet.getString("users.name"))
+                            .setSur_names(resultSet.getString("users.sur_names"));
                     barmans.add(barman);
                 }
                 return barmans;

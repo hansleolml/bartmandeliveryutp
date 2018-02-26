@@ -5,8 +5,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContractEntity extends BaseEntity {
-    private static String DEFAULT_SQL = "SELECT * FROM bar.contracts";
+public class ContractsEntity extends BaseEntity {
+    private static String DEFAULT_SQL = "SELECT bar.contracts.*,bar.users.name as cliente FROM bar.contracts LEFT JOIN bar.users on bar.contracts.users_id = bar.users.ID";
 
     private List<Contract> findByCriteria(String sql) {
         List<Contract> contracts;
@@ -16,8 +16,9 @@ public class ContractEntity extends BaseEntity {
                 ResultSet resultSet = getConnection().createStatement().executeQuery(sql);
                 while (resultSet.next()) {
                     Contract contract = new Contract()
-                            .setId(resultSet.getInt("contract_id"))
-                            .setName(resultSet.getString("contract_name"));
+                            .setId(resultSet.getInt("id"))
+                            .setBartenderId(resultSet.getInt("bartenders_id"))
+                            .setClienteId(resultSet.getInt("users_id"));
                     contracts.add(contract);
                 }
                 return contracts;
@@ -69,10 +70,10 @@ public class ContractEntity extends BaseEntity {
     public boolean delete(String name){
         return updatebyCriteria("DELETE FROM contracts WHERE contract_name ='"+name+"'")>0;
     }
-
+/*
     public boolean update(Contract contract){
         return updatebyCriteria("UPDATE customers SET contract_name ='"+ contract.getName()+"'WHERE contract_id="+
                 String.valueOf(contract.getId()))>0;
-    }
+    }*/
 
 }

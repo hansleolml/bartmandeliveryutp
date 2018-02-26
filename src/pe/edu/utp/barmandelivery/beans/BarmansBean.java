@@ -58,6 +58,10 @@ public class BarmansBean implements Serializable{
         service.updateBarman(this.getBarman());
         return "success";
     }*/
+    public String contractBarman(Barman barman){
+        //service.updateBarman(this.getBarman());
+        return "success";
+    }
     public String deleteBarman(Barman barman){
         service.deleteBarman(barman.getId());
         return "success";
