@@ -4,12 +4,42 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://java.sun.com/jsf/html">
-<f:view>
-    <h:outputLabel value="Hello, world"/>
-    <h:form>
-        <h:commandButton value="Barmans List" action="listBarmans"/>
-        <h:commandButton value="Barman Contract" action="contractBarman"/>
-    </h:form>
-</f:view>
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui">
+
+<head>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="application/javascript"/>
+
+
+</head>
+<h:body>
+
+    <b:container>
+        <b:jumbotron>
+            <h1>Barman Delivery</h1>
+            <p>Unete a la mejor comunidad en la que contratas y ofreces el servicio de barman</p>
+        </b:jumbotron>
+        <b:row>
+            <b:column>
+                <h1>Elige una opción</h1>
+            </b:column>
+        </b:row>
+
+
+        <h:form>
+            <h:commandButton value="Barmans List" action="listBarmans"/>
+            <h:commandButton value="Barman Contract" action="contractBarman"/>
+        </h:form>
+    </b:container>
+
+
+</h:body>
 </html>

@@ -4,35 +4,54 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
-<f:view>
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:b="http://bootsfaces.net/ui">
+<h:head>
+    <h:head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="application/javascript"/>
+    </h:head>
+</h:head>
+<h:body>
+    <b:container>
+<b:row>
+
+
     <h:outputLabel value="Barmans List"/>
 
-    <h:dataTable value="#{barmansBean.barmans}" var="barman">
-        <h:column>
+    <b:dataTable value="#{barmansBean.barmans}" var="barman">
+        <b:dataTableColumn>
             <f:facet name="header">FOTO</f:facet>
             #{barman.id}
-        </h:column>
-        <h:column>
+        </b:dataTableColumn>
+        <b:dataTableColumn>
             <f:facet name="header">NOMBRE</f:facet>
             #{barman.name}
-        </h:column>
-        <h:column>
+        </b:dataTableColumn>
+        <b:dataTableColumn>
             <f:facet name="header">APELLIDOS</f:facet>
             #{barman.sur_names}
-        </h:column>
-        <h:column>
+        </b:dataTableColumn>
+        <b:dataTableColumn>
             <f:facet name="header">CALIFICACIÓN</f:facet>
             #{barman.id}
-        </h:column>
-        <h:column>
+        </b:dataTableColumn>
+        <b:dataTableColumn>
+            <f:facet name="header">Actions</f:facet>
             <h:form>
                 <h:commandButton value="Contratar" action="#{barmansBean.contractBarman(barman)}"/>
             </h:form>
-        </h:column>
-    </h:dataTable>
+        </b:dataTableColumn>
+    </b:dataTable>
     <h:form>
         <h:commandButton value="New Barman" action="#{barmansBean.newBarman}"/>
     </h:form>
-</f:view>
+</b:row>
+    </b:container>
+</h:body>
 </html>
