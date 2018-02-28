@@ -25,24 +25,18 @@
 
                 <b:row>
                     <b:jumbotron>
-                        <h3>Usted seleccionó a  ...</h3>
+                        <h3>Usted seleccionó a <u><strong>#{barmansBean.name}</strong></u> ...</h3>
                         <h4>Selecciones las bebidas que mas desee</h4>
                     </b:jumbotron>
                 </b:row>
-
                 <b:row >
-
-
-
                     <b:column col-md="8" >
-                        <b:dataTable value="" var="barman">
+                        <b:dataTable value="#{drinksBean.drinks}" var="drink">
                             <b:dataTableColumn>
                                 <f:facet name="header">COSTO</f:facet>
-
                             </b:dataTableColumn>
                             <b:dataTableColumn>
                                 <f:facet name="header">FOTO</f:facet>
-
                             </b:dataTableColumn>
                             <b:dataTableColumn>
                                 <f:facet name="header">NOMBRE</f:facet>
@@ -50,11 +44,8 @@
                             </b:dataTableColumn>
                             <b:dataTableColumn>
                                 <f:facet name="header">CANTIDAD</f:facet>
-
                             </b:dataTableColumn>
-
                         </b:dataTable>
-
                     </b:column>
                 </b:row>
                     <b:row>

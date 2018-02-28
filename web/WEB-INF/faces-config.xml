@@ -12,6 +12,11 @@
             <to-view-id>/newBarman.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
+            <from-action>#{barmansBean.contractBarman(barman)}</from-action>
+            <from-outcome>success</from-outcome>
+            <to-view-id>/RequestCustomer.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
             <from-action>#{barmansBean.editBarman(barman)}</from-action>
             <from-outcome>success</from-outcome>
             <to-view-id>/editBarman.xhtml</to-view-id>

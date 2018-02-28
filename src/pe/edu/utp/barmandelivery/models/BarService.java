@@ -11,6 +11,7 @@ public class BarService {
     private Connection connection;
     private BarmansEntity barmansEntity;
     private ContractsEntity contractsEntity;
+    private DrinksEntity drinksEntity;
 
     private Connection getConnection() {
         if(connection == null) {
@@ -47,7 +48,15 @@ public class BarService {
         }
         return contractsEntity;
     }
-
+    protected DrinksEntity getDrinksEntity() {
+        if(getConnection() != null) {
+            if(drinksEntity == null) {
+                drinksEntity = new DrinksEntity();
+                drinksEntity.setConnection(getConnection());
+            }
+        }
+        return drinksEntity;
+    }
 
     public List<Barman> findAllBarmans() {
         return getBarmansEntity() != null ?
@@ -56,6 +65,10 @@ public class BarService {
     public List<Contract> findAllContracts() {
         return getContractsEntity() != null ?
                 getContractsEntity().findAll() : null;
+    }
+    public List<Drink> findAllDrinks() {
+        return getDrinksEntity() != null ?
+                getDrinksEntity().findAll() : null;
     }
     
     public Barman findBarmanById(int id) {
@@ -73,9 +86,5 @@ public class BarService {
         return getBarmansEntity() != null ?
                 getBarmansEntity().delete(id) : false;
     }
-/*
-    public boolean updateBarman(Barman barman) {
-        return getBarmansEntity() != null ?
-                getBarmansEntity().update(barman) : false;
-    }*/
+
 }

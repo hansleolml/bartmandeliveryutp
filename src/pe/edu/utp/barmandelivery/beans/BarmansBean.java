@@ -31,14 +31,14 @@ public class BarmansBean implements Serializable{
     public void setBarman(Barman barman){
         this.barman =barman;
     }
-    /*
+
     public String getName(){
 
         return this.getBarman().getName();
     }
     public void setName(String name){
         this.getBarman().setName(name);
-    }*/
+    }
     public String newBarman(){
         this.setBarman(new Barman());
         return "success";
@@ -59,7 +59,7 @@ public class BarmansBean implements Serializable{
         return "success";
     }*/
     public String contractBarman(Barman barman){
-        //service.updateBarman(this.getBarman());
+        this.setBarman(barman);
         return "success";
     }
     public String deleteBarman(Barman barman){

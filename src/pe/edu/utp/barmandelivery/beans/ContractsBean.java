@@ -31,41 +31,21 @@ public class ContractsBean implements Serializable {
     public void setContract(Contract contract){
         this.contract =contract;
     }
-    /*
-    public String getName(){
 
-        return this.getContract().getName();
-    }
-    public void setName(String name){
-        this.getContract().setName(name);
-    }*/
     public String newContract(){
         this.setContract(new Contract());
         return "success";
     }
-    /*
-    public String createContract(){
 
-        service.createContract(this.getName());
-        return "success";
-    }*/
     public String editContract(Contract contract){
         this.setContract(contract);
         return "success";
     }
-    /*
-    public String updateContract(){
-        service.updateContract(this.getContract());
-        return "success";
-    }*/
+
     public String contractContract(Contract contract){
         //service.updateContract(this.getContract());
         return "success";
-    }/*
-    public String deleteContract(Contract contract){
-        service.deleteContract(contract.getId());
-        return "success";
-    }*/
+    }
 
 
 }
