@@ -27,23 +27,23 @@
                 <b:row>
                     <b:row>
                         <b:jumbotron>
-                            <h2>Establecer Contrato a la carta</h2>
+                            <h2>Establecer el contrato por barra libre</h2>
                             <h3>Por favor rellene los siguientes campos</h3>
                         </b:jumbotron>
                     </b:row>
                     <b:column col-md="6">
                         <h:form >
                             <b:inputText placeholder="Lugar" />
-                            <b:datepicker label="Fecha de Contrato"  />
-                            <b:inputText placeholder="Hora de llegada" />
-                            <b:row>
-                                <b:column>
-                                    <b:button look="primary" value="Confirmar"/>
-                                </b:column>
-                                <b:column col-md="2">
-                                    <b:button look="primary" value="Rechazar"/>
-                                </b:column>
-                            </b:row>
+                            <b:dateTimePicker label="Establesca la Fecha y Hora de llegada" />
+                            <b:inputText placeholder="Asistentes al Evento" />
+                            <b:inputText placeholder="Horas de Contrato" />
+
+                            <b:column col-md="2">
+                                <b:button look="primary" value="Confirmar"/>
+                            </b:column>
+                            <b:column col-md="2">
+                                <b:button look="primary" value="Rechazar"/>
+                            </b:column>
                         </h:form>
 
                     </b:column>
