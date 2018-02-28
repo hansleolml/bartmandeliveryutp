@@ -22,24 +22,24 @@
 
     <header>
 
-       <ui:insert name="header">
-             <!--<h:outputLabel value="Default header"/>-->
+        <ui:insert name="header">
+            <!--<h:outputLabel value="Default header"/>-->
 
 
-        <b:navBar brand="Barman Delivery"  brandHref="#" inverse="true" fixed="top">
+            <b:navBar brand="Barman Delivery"  brandHref="#" inverse="true" >
 
-            <h:form styleClass="navbar-form navbar-right">
-                <div class="form-group">
-                    <b:inputText placeholder="Email" fieldSize="sm"/>
-                </div>
-                <div class="form-group">
-                    <b:inputText placeholder="Password" fieldSize="sm"/>
-                </div>
-                #{' '}
-                <b:commandButton action="a" value="Sign in" look="success" icon="chevron-right" iconAlign="right"/>
-            </h:form>
-        </b:navBar>
-    </ui:insert>
+                <h:form styleClass="navbar-form navbar-right">
+                    <div class="form-group">
+                        <b:inputText placeholder="Email" fieldSize="sm"/>
+                    </div>
+                    <div class="form-group">
+                        <b:inputText placeholder="Password" fieldSize="sm"/>
+                    </div>
+                    #{' '}
+                    <b:commandButton action="a" value="Sign in" look="success" icon="chevron-right" iconAlign="right"/>
+                </h:form>
+            </b:navBar>
+        </ui:insert>
     </header>
 
 
@@ -50,9 +50,9 @@
 
     <footer>
 
-       <ui:insert name="footer">
-           <b:navBar brand="Quienes Somos"  brandHref="#" inverse="true" fixed="botton">
-           </b:navBar>
+        <ui:insert name="footer">
+            <b:navBar brand="Quienes Somos"  brandHref="#" inverse="true" >
+            </b:navBar>
         </ui:insert>
 
     </footer>
