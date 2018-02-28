@@ -3,26 +3,74 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="465.0">pe.edu.utp.barmandelivery.models.Barman</node>
-    <node x="8.0" y="0.0">pe.edu.utp.barmandelivery.models.BaseEntity</node>
-    <node x="305.0" y="0.0">pe.edu.utp.barmandelivery.models.BdService</node>
-    <node x="0.0" y="147.0">pe.edu.utp.barmandelivery.models.BarmansEntity</node>
+    <node x="0.0" y="350.0">pe.edu.utp.barmandelivery.models.UserEntity</node>
+    <node x="1520.2440476190475" y="0.0">pe.edu.utp.barmandelivery.models.Barman</node>
+    <node x="979.0" y="361.0">pe.edu.utp.barmandelivery.models.ContractsEntity</node>
+    <node x="719.0" y="350.0">pe.edu.utp.barmandelivery.models.NotificationsEntity</node>
+    <node x="1222.0" y="350.0">pe.edu.utp.barmandelivery.models.CustomerEntity</node>
+    <node x="220.0" y="350.0">pe.edu.utp.barmandelivery.models.QualificationEntity</node>
+    <node x="718.0" y="88.5">pe.edu.utp.barmandelivery.models.BaseEntity</node>
+    <node x="493.99999999999994" y="361.0">pe.edu.utp.barmandelivery.models.DrinksEntity</node>
+    <node x="1471.0" y="361.0">pe.edu.utp.barmandelivery.models.BarmansEntity</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="pe.edu.utp.barmandelivery.models.BarmansEntity" target="pe.edu.utp.barmandelivery.models.Barman">
+      <point x="27.25" y="-69.5" />
+      <point x="1607.25" y="330.0" />
+      <point x="1579.9940476190475" y="330.0" />
+      <point x="-59.75" y="125.0" />
+    </edge>
+    <edge source="pe.edu.utp.barmandelivery.models.ContractsEntity" target="pe.edu.utp.barmandelivery.models.BaseEntity">
+      <point x="55.75" y="-69.5" />
+      <point x="1146.25" y="310.0" />
+      <point x="882.2142857142857" y="310.0" />
+      <point x="43.214285714285666" y="36.5" />
+    </edge>
+    <edge source="pe.edu.utp.barmandelivery.models.DrinksEntity" target="pe.edu.utp.barmandelivery.models.BaseEntity">
+      <point x="-51.25" y="-69.5" />
+      <point x="545.25" y="310.0" />
+      <point x="795.7857142857143" y="310.0" />
+      <point x="-43.214285714285666" y="36.5" />
+    </edge>
+    <edge source="pe.edu.utp.barmandelivery.models.UserEntity" target="pe.edu.utp.barmandelivery.models.BaseEntity">
+      <point x="50.0" y="-80.5" />
+      <point x="150.0" y="280.0" />
+      <point x="743.9285714285714" y="280.0" />
+      <point x="-95.07142857142856" y="36.5" />
+    </edge>
+    <edge source="pe.edu.utp.barmandelivery.models.QualificationEntity" target="pe.edu.utp.barmandelivery.models.BaseEntity">
+      <point x="-63.5" y="-80.5" />
+      <point x="283.5" y="290.0" />
+      <point x="761.2142857142857" y="290.0" />
+      <point x="-77.78571428571433" y="36.5" />
+    </edge>
+    <edge source="pe.edu.utp.barmandelivery.models.CustomerEntity" target="pe.edu.utp.barmandelivery.models.BaseEntity">
+      <point x="-57.25" y="-80.5" />
+      <point x="1279.25" y="300.0" />
+      <point x="899.4999999999999" y="300.0" />
+      <point x="60.499999999999886" y="36.5" />
+    </edge>
+    <edge source="pe.edu.utp.barmandelivery.models.NotificationsEntity" target="pe.edu.utp.barmandelivery.models.BaseEntity">
+      <point x="-60.0" y="-80.5" />
+      <point x="779.0" y="330.0" />
+      <point x="830.3571428571428" y="330.0" />
+      <point x="-8.642857142857224" y="36.5" />
+    </edge>
     <edge source="pe.edu.utp.barmandelivery.models.BarmansEntity" target="pe.edu.utp.barmandelivery.models.BaseEntity">
-      <point x="0.0" y="-136.5" />
-      <point x="0.0" y="48.5" />
+      <point x="-27.25" y="-69.5" />
+      <point x="1552.75" y="270.0" />
+      <point x="951.3571428571428" y="270.0" />
+      <point x="112.35714285714278" y="36.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0240339302544768" x="342.74910240331417" y="509.3115060359746" />
+  <settings layout="Hierarchic Group" zoom="0.35730337078651697" x="774.1280332210624" y="180.45192747336898" />
   <SelectedNodes />
   <Categories>
-    <Category>Fields</Category>
     <Category>Constructors</Category>
     <Category>Methods</Category>
   </Categories>
   <SCOPE>All</SCOPE>
-  <VISIBILITY>private</VISIBILITY>
+  <VISIBILITY>public</VISIBILITY>
 </Diagram>
 

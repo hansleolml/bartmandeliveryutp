@@ -18,7 +18,10 @@ public class DrinksEntity extends BaseEntity{
                         .executeQuery(sql);
                 while (resultSet.next()) {
                     Drink drink = new Drink()
-                            .setName(resultSet.getString("name"));
+                            .setName(resultSet.getString("name"))
+                            .setCost(resultSet.getFloat("cost"))
+                            .setVolume(resultSet.getString("volume"))
+                            .setId(resultSet.getInt("id"));
                     drinks.add(drink);
                 }
                 return drinks;
