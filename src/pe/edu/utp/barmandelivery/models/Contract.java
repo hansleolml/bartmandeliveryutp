@@ -4,15 +4,26 @@ public class Contract {
     private int id;
     private int bartenderId;
     private int clienteId;
+    private String cliente;
 
-    public Contract(int id, int bartenderId, int clienteId) {
+    public Contract(int id, int bartenderId, int clienteId,String cliente) {
         this.id = id;
         this.bartenderId = bartenderId;
         this.clienteId = clienteId;
+        this.cliente=cliente;
     }
 
     public Contract(){
 
+    }
+
+    public String getCliente() {
+        return cliente;
+    }
+
+    public Contract setCliente(String cliente) {
+        this.cliente = cliente;
+        return this;
     }
 
     public int getId() {

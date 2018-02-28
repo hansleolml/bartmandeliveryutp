@@ -9,16 +9,16 @@
     <h:outputLabel value="Contratar Barman"/>
     <h:dataTable value="#{contractsBean.contracts}" var="contract">
         <h:column>
-            <f:facet name="header">Barman</f:facet>
+            <f:facet name="header">ID_Contrato</f:facet>
             #{contract.id}
         </h:column>
         <h:column>
-            <f:facet name="header">Cliente</f:facet>
+            <f:facet name="header">Barman</f:facet>
             #{contract.bartenderId}
         </h:column>
         <h:column>
-            <f:facet name="header">ID_Contrato</f:facet>
-            #{contract.clienteId}
+            <f:facet name="header">Cliente</f:facet>
+            #{contract.cliente}
         </h:column>
     </h:dataTable>
 </f:view>

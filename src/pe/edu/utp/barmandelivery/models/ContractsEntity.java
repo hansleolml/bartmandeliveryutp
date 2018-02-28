@@ -18,7 +18,7 @@ public class ContractsEntity extends BaseEntity {
                     Contract contract = new Contract()
                             .setId(resultSet.getInt("id"))
                             .setBartenderId(resultSet.getInt("bartenders_id"))
-                            .setClienteId(resultSet.getInt("users_id"));
+                            .setCliente(resultSet.getString("cliente"));
                     contracts.add(contract);
                 }
                 return contracts;
