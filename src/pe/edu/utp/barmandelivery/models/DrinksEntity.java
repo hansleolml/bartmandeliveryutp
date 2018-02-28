@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DrinksEntity extends BaseEntity{
-    private static String DEFAULT_SQL="SELECT * FROM bar.drinks_lists where bar.drinks_lists.bartenders_id='1'";
+    private static String DEFAULT_SQL="SELECT * FROM bar.drinks_lists";
 
     private List<Drink> findByCriteria(String sql) {
         List<Drink> drinks;
@@ -18,7 +18,7 @@ public class DrinksEntity extends BaseEntity{
                         .executeQuery(sql);
                 while (resultSet.next()) {
                     Drink drink = new Drink()
-                            .setName(resultSet.getString("drink_lists.name"));
+                            .setName(resultSet.getString("name"));
                     drinks.add(drink);
                 }
                 return drinks;
