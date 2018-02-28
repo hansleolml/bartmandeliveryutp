@@ -33,20 +33,23 @@
                     <b:column col-md="8" >
                         <b:dataTable value="#{drinksBean.drinks}" var="drink">
                             <b:dataTableColumn>
-                                <f:facet name="header">COSTO</f:facet>
-                                #{drink.name}
-                            </b:dataTableColumn>
-                            <b:dataTableColumn>
-                                <f:facet name="header">FOTO</f:facet>
-                                #{drink.name}
-                            </b:dataTableColumn>
-                            <b:dataTableColumn>
                                 <f:facet name="header">NOMBRE</f:facet>
                                 #{drink.name}
                             </b:dataTableColumn>
                             <b:dataTableColumn>
                                 <f:facet name="header">CANTIDAD</f:facet>
-                                #{drink.name}
+                                #{drink.volume}
+                            </b:dataTableColumn>
+                            <b:dataTableColumn>
+                                <f:facet name="header">FOTO</f:facet>
+                                #{drink.id}
+                            </b:dataTableColumn>
+                            <b:dataTableColumn>
+                                <f:facet name="header">COSTO</f:facet>
+                                #{drink.cost}
+                            </b:dataTableColumn>
+                            <b:dataTableColumn>
+                                <f:facet name="header">PEDIR</f:facet>
                             </b:dataTableColumn>
                         </b:dataTable>
                     </b:column>
