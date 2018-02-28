@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:b="http://bootsfaces.net/ui">
+
+<h:head>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="application/javascript"/>
+
+</h:head>
+<h:body>
+    <ui:composition template="defaultLayoutSesion.xhtml">
+        <ui:define name="content">
+            <b:container >
+
+<b:row>
+    <b:jumbotron>
+        <h1>Organiza tu carta de Bebidas</h1>
+    </b:jumbotron>
+</b:row>
+
+                   <b:row >
+
+                    <b:column col-md="4">
+                        <b:jumbotron>
+                        <b:dropMenu value="Agrega tus bebidas por especialidad" iconAwesome="birthday-cake">
+                        <b:navLink value="Pisco" href="#"></b:navLink>
+                        <b:navLink value="Ron" href="#"></b:navLink>
+                        <b:navLink value="Tequila" href="#"></b:navLink>
+                        </b:dropMenu>
+                        <h:form>
+                            <b:inputText placeholder="Nombre Bebida" />
+                            <b:inputText placeholder="Costo Unitario" />
+                            <b:row>
+
+                            <p>Subir Foto</p>
+
+
+                            <b:navLink icon-flip="h" iconAwesome="file-image-o" icon-size="3x"
+                                                        tooltip="Icon only" onclick="return false;"
+                                                        look="info" />
+
+                            </b:row>
+                        </h:form>
+                        <b:button look="primary" value="Subir a la carta"/>
+                        </b:jumbotron>
+                    </b:column>
+
+                    <b:column col-md="8">
+                        <b:dataTable value="" var="barman">
+                        <b:dataTableColumn>
+                            <f:facet name="header">COSTO</f:facet>
+
+                        </b:dataTableColumn>
+                        <b:dataTableColumn>
+                            <f:facet name="header">NOMBRE</f:facet>
+
+                        </b:dataTableColumn>
+                        <b:dataTableColumn>
+                            <f:facet name="header">FOTO</f:facet>
+
+                        </b:dataTableColumn>
+                        <b:dataTableColumn>
+                            <f:facet name="header">CANTIDAD</f:facet>
+
+                        </b:dataTableColumn>
+                            <b:dataTableColumn>
+                                <f:facet name="header">EDITAR</f:facet>
+
+                            </b:dataTableColumn>
+                            <b:dataTableColumn>
+                                <f:facet name="header">ELIMINAR</f:facet>
+
+                            </b:dataTableColumn>
+                        </b:dataTable>
+                    </b:column>
+                     </b:row>
+
+
+
+
+            </b:container>
+        </ui:define>
+    </ui:composition>
+
+
+</h:body>
+
+
+</html>
