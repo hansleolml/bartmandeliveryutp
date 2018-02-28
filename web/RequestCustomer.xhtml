@@ -50,32 +50,32 @@
                             </b:dataTableColumn>
                             <b:dataTableColumn>
                                 <f:facet name="header">PEDIR</f:facet>
+                                <h:inputText id="pedido"></h:inputText>
                             </b:dataTableColumn>
                         </b:dataTable>
                     </b:column>
                 </b:row>
-                    <b:row>
-                    <b:column col-md="2" >
-                    <h:form>
-                        <h:commandButton value="Aceptar" action="#{barmansBean.newBarman}"/>
+                <b:row>
+                    <h:form >
+                        <b:row col-md="8">
+                            <b:column col-md="3">
+                                <b:inputText placeholder="Lugar" label="Escriba el Lugar"/>
+                            </b:column>
+                            <b:column col-md="3">
+                                <b:dateTimePicker label="Establesca la Fecha y Hora de llegada" />
+                            </b:column>
+                        </b:row>
+                        <b:row col-md="4">
+                            <b:column col-md="3">
+                                <b:button look="primary" value="Confirmar"/>
+                            </b:column>
+                            <b:column col-md="3">
+                                <b:button look="primary" value="Rechazar"/>
+                            </b:column>
+                        </b:row>
                     </h:form>
-                    </b:column>
-                    <b:column col-md="2" >
-                    <h:form>
-                        <h:commandButton value="Limpiar" action="#{barmansBean.newBarman}"/>
-                    </h:form>
-                    </b:column>
-                    <b:column col-md="2" >
-                    <h:form>
-                        <h:commandButton value="Rechazar" action="#{barmansBean.newBarman}"/>
-                    </h:form>
-                    </b:column>
-                    </b:row>
 
-
-
-
-
+                </b:row>
             </b:container>
         </ui:define>
     </ui:composition>
