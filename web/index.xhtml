@@ -21,25 +21,45 @@
 
 </head>
 <h:body>
-
-    <b:container>
+    <ui:composition template="defaultLayout.xhtml">
+    <ui:define name="content">
+    <b:container >
         <b:jumbotron>
+
+            <b:container>
+
             <h1>Barman Delivery</h1>
             <p>Unete a la mejor comunidad en la que contratas y ofreces el servicio de barman</p>
+            </b:container>
         </b:jumbotron>
-        <b:row>
-            <b:column>
-                <h1>Elige una opción</h1>
-            </b:column>
-        </b:row>
 
 
-        <h:form>
-            <h:commandButton value="Barmans List" action="listBarmans"/>
-            <h:commandButton value="Barman Contract" action="contractBarman"/>
-        </h:form>
+
+<b:row>
+        <b:column col-md="8">
+            <h4>Es tu primera vez en Barman Delivery..</h4>
+        </b:column>
+
+        <b:column col-md="4">
+            <b:jumbotron>
+            <h2>Es tu primera vez en Barman Delivery..</h2>
+            <h:form>
+                <h:commandButton value="Registrate" action="#"/>
+            </h:form>
+            <h3>Elige una opción</h3>
+            <h:form>
+                <h:commandButton value="Barmans List" action="listBarmans"/>
+                <h:commandButton value="Barman Contract" action="contractBarman"/>
+            </h:form>
+            </b:jumbotron>
+        </b:column>
+
+    </b:row>
+
+
     </b:container>
-
+    </ui:define>
+    </ui:composition>
 
 </h:body>
 </html>

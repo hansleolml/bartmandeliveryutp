@@ -16,7 +16,7 @@ public class BarService {
         if(connection == null) {
             try {
                 connection = ((DataSource) InitialContext
-                        .doLookup("jdbc/MySQLDataSource2"))
+                        .doLookup("jdbc/MySQLDataSource1"))
                         .getConnection();
             } catch (NamingException | SQLException e) {
                 e.printStackTrace();
